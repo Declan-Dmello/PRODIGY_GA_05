@@ -22,9 +22,6 @@ Supports CUDA for faster processing on GPUs.
 🏗️ Training
 The training loop iteratively updates the target image to reduce the weighted sum of content and style losses:
 
-python
-Copy
-Edit
 loss = style_weight * style_loss + content_weight * content_loss
 optimizer.zero_grad()
 loss.backward()
@@ -32,8 +29,3 @@ optimizer.step()
 📚 Results
 The output image is a unique blend of the content image’s structure and the style image’s artistic flair.
 
-Here’s an example of the results:
-
-Content Image
-Style Image
-Generated Stylized Image
